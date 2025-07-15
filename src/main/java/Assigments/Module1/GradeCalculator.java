@@ -56,6 +56,12 @@ public class GradeCalculator {
         System.out.println("Weighted exam grade (out of 58): " + weightedExam + "%");
         System.out.println("Total Grade: " + totalGrade + "%");
 
+        // 作业：完善上述计算器，能够对输入是否合法进行检测
+        /*if (1 != 2){
+            System.err.println("Something wrong!");
+            return;
+        }*/
+
         // 关闭Scanner
         in.close();
     }

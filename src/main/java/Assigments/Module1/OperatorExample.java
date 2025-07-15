@@ -5,11 +5,9 @@ public class OperatorExample {
     public static void main(String[] args) {
         System.out.println("===== 算术运算符 =====");
         testArithmeticOperators();
-        System.out.println();
 
         System.out.println("\n===== 关系运算符 =====");
         testRelationalOperators();
-        System.out.println();
 
         System.out.println("\n===== 逻辑运算符 =====");
         testLogicalOperators();
@@ -35,6 +33,17 @@ public class OperatorExample {
         System.out.println("a * b = " + (a * b)); // 乘法: 30
         System.out.println("a / b = " + (a / b)); // 除法: 3
         System.out.println("a % b = " + (a % b)); // 取余: 1
+
+        int m = 10;
+        double n = 3;
+        // 此时Java隐含了一个自动类型转换，将 m 转换为 double
+        System.out.println("m / n = " + (m / n)); // 除法: 3.3333
+        // m = n; // java: 不兼容的类型: 从double转换到int可能会有损失
+        // System.out.println("int = double: " + m);
+
+        n = n + 0.8;
+        System.out.println("(double) n = " + n); // 未强制转换: 3.8
+        System.out.println("(int) n = " + (int)n); // 强制转换时舍弃小数位: 3
 
         int x = 5;
         System.out.println("x++ = " + x++); // 后自增: 5
@@ -79,7 +88,7 @@ public class OperatorExample {
         System.out.println("a & b: " + (a & b));   // 按位与: 0001 → 1
         // 对应位只要有一个为 1，结果为 1，否则为 0
         System.out.println("a | b: " + (a | b));   // 按位或: 0111 → 7
-        // 对应位 不同 时结果为 1，相同为 0
+        // 对应位不同时结果为 1，相同为 0
         System.out.println("a ^ b: " + (a ^ b));   // 按位异或: 0110 → 6
         // 将每一位取反，0 变 1，1 变 0
         System.out.println("~a: " + (~a));         // 按位取反: 1010 → -6
@@ -97,8 +106,14 @@ public class OperatorExample {
         System.out.println("a: " + a); // 输出: 12
 
         // 复合赋值与类型转换
+        // 8位带符号的整数
         byte b = 10;
+
+        // 等价于 b = (byte)(b + 5)，带有强制类型转换
         b += 5;      // 正确: 自动类型转换
+
+        // int（32位）转 byte（8位）可能导致精度损失（例如结果超过 byte 范围时）
+        // Java中 “5” 整数默认类型为 int
         // b = b + 5; // 错误: 可能损失精度
         System.out.println("b: " + b); // 输出: 15
     }
