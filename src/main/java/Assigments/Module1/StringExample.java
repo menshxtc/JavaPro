@@ -1,5 +1,11 @@
 package Assigments.Module1;
 
+/**
+ * @Author mensh
+ * @Date 2025/7/15 11:21
+ * @Abstract This class is used for testing String.
+ */
+
 public class StringExample {
     public static void main(String[] args) {
         String str1 = "Hello";

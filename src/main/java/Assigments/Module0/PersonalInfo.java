@@ -1,5 +1,13 @@
 package Assigments.Module0;
 
+/**
+ * @Author mensh
+ * @Date 2025/7/15 11:27
+ * @Abstract Code Template for testing sout.
+ * If necessary, download the source code about "Robot" on your own and test its function.
+ *
+ */
+
 public class PersonalInfo {
     public static void main(String[] args) {
         // 输出个人信息头部

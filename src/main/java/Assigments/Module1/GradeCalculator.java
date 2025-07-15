@@ -2,6 +2,13 @@ package Assigments.Module1;
 
 import java.util.Scanner;
 
+/**
+ * @Author mensh
+ * @Date 2025/7/15 11:21
+ * @Abstract Code template for Assignment 1.
+ * Please polish the code to make it robust.
+ */
+
 public class GradeCalculator {
     public static void main(String[] args) {
         // 创建Scanner对象用于获取用户输入

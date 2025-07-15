@@ -2,6 +2,13 @@ package Assigments.Module1;
 
 import java.util.Scanner;
 
+/**
+ * @Author mensh
+ * @Date 2025/7/15 11:21
+ * @Abstract This class is used for testing Scanner.
+ * The class constructor is used inside.
+ */
+
 class nextLineTest{
     public nextLineTest(){
         Scanner scanner = new Scanner(System.in);

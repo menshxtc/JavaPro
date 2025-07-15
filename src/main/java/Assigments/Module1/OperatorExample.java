@@ -1,5 +1,11 @@
 package Assigments.Module1;
 
+/**
+ * @Author mensh
+ * @Date 2025/7/15 11:21
+ * @Abstract This class is used for testing operators.
+ */
+
 public class OperatorExample {
 
     public static void main(String[] args) {
