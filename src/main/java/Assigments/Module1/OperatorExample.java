@@ -39,7 +39,6 @@ public class OperatorExample {
         // 此时Java隐含了一个自动类型转换，将 m 转换为 double
         System.out.println("m / n = " + (m / n)); // 除法: 3.3333
         // m = n; // java: 不兼容的类型: 从double转换到int可能会有损失
-        // System.out.println("int = double: " + m);
 
         n = n + 0.8;
         System.out.println("(double) n = " + n); // 未强制转换: 3.8
