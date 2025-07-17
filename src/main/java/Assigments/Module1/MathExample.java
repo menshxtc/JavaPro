@@ -9,12 +9,16 @@ package Assigments.Module1;
 public class MathExample {
     public static void main(String[] args) {
 
+        // Static 静态
+        // Math math = new Math();
+
         System.out.println("圆周率："+Math.PI);         // 圆周率 π，约 3.14159
         System.out.println("自然对数底数为："+Math.E);   // 自然对数的底数 e，约 2.71828
 
         double x = 2.6;
         double y = -3.7;
         double z = 3;
+
         // 绝对值
         System.out.println(Math.abs(y));  // 3.7
         // 平方
@@ -35,9 +39,6 @@ public class MathExample {
         // 生成 [1, 10] 之间的随机整数
         int randomInt = (int) (Math.random() * 10) + 1;
         System.out.println(randomInt);
-
-
-
 
     }
 }

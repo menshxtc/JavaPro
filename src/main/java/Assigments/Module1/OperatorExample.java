@@ -52,6 +52,8 @@ public class OperatorExample {
         System.out.println("(double) n = " + n); // 未强制转换: 3.8
         System.out.println("(int) n = " + (int)n); // 强制转换时舍弃小数位: 3
 
+        System.out.println("(double) m = " + (double)m);
+
         int x = 5;
         System.out.println("x++ = " + x++); // 后自增: 5
         System.out.println("++x = " + ++x); // 前自增: 7
@@ -61,7 +63,7 @@ public class OperatorExample {
     public static void testRelationalOperators() {
         int a = 10, b = 20;
         System.out.println("a == b: " + (a == b)); // false
-        System.out.println("a != b: " + (a != b)); // true
+        System.out.println("a != b: " + (a != b)); // 非 true
         System.out.println("a > b: " + (a > b));   // false
         System.out.println("a < b: " + (a < b));   // true
         System.out.println("a >= b: " + (a >= b)); // false
@@ -77,7 +79,6 @@ public class OperatorExample {
         System.out.println("x || y: " + (x || y)); // true
         // 非
         System.out.println("!x: " + (!x));         // false
-
         // 短路与 vs 非短路与
         int a = 5, b = 10;
         // 左侧为 false 时，右侧不执行
@@ -100,8 +101,8 @@ public class OperatorExample {
         // 将每一位取反，0 变 1，1 变 0
         System.out.println("~a: " + (~a));         // 按位取反: 1010 → -6
 
-        int x = 8;  // 二进制: 1000
-        System.out.println("x << 1: " + (x << 1)); // 左移1位: 10000 → 16
+        int x = 8;  // 二进制: 00001000
+        System.out.println("x << 1: " + (x << 1)); // 左移1位: 00010000 → 16
         System.out.println("x >> 1: " + (x >> 1)); // 右移1位: 0100 → 4
     }
 
@@ -110,6 +111,8 @@ public class OperatorExample {
         int a = 10;
         a += 5;  // 等价于 a = a + 5 → 15
         a -= 3;  // 等价于 a = a - 3 → 12
+//        a *= 2;
+//        a /= 2;
         System.out.println("a: " + a); // 输出: 12
 
         // 复合赋值与类型转换
@@ -129,7 +132,14 @@ public class OperatorExample {
     public static void testTernaryOperator() {
         int score = 85;
         // 判断为真输出第一个，为假输出第二个
+        // (条件) ? 条件为真时 : 条件为假时
         String result = (score >= 60) ? "及格" : "不及格";
+        /*if(score >= 60){
+            String result = "及格";
+        }else{
+            String result = "不及格";
+        }*/
+
         System.out.println("成绩: " + result); // 输出: 及格
 
         // 嵌套三元运算符

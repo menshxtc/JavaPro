@@ -11,13 +11,14 @@ import java.util.Scanner;
 
 class nextLineTest{
     public nextLineTest(){
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("请输入一个整数: ");
         // 当你输入 123 并按下回车键时，实际输入缓冲区中的内容是 "123\n"
         int num = scanner.nextInt();
         // scanner.nextInt()读取了 123，但换行符 \n 仍留在缓冲区中
-        // scanner.nextLine();  // 消耗掉残留的换行符
+        scanner.nextLine();  // 消耗掉残留的换行符
 
         System.out.print("请输入一行文本: ");
         // 如果部消耗掉残留的换行符，则下函数会读取残留的 \n
@@ -33,7 +34,12 @@ class nextLineTest{
 public class ScannerExample {
     public static void main(String[] args) {
 
-        scannerTest();
+        //scannerTest();
+
+        /*for(int i=1;i<10;i++){
+            scannerTest();
+        }*/
+
         // 缓冲区测试
         nextLineTest bufferTest = new nextLineTest();
     }
@@ -53,12 +59,12 @@ public class ScannerExample {
         double decimal = scanner.nextDouble();
         System.out.println("你输入的小数是: " + decimal);
 
-        // 读取字符串（遇到空格停止）
+        // 读取字符串
         System.out.print("请输入一个单词: ");
         String word = scanner.next();
         System.out.println("你输入的单词是: " + word);
 
-        // 读取整行（包括空格）
+        // 读取整行
         System.out.print("请输入一行文本: ");
         scanner.nextLine(); // 消耗掉上一次输入的换行符
         String line = scanner.nextLine();
@@ -67,4 +73,5 @@ public class ScannerExample {
         // 关闭资源
         scanner.close();
     }
+
 }
