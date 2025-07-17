@@ -19,6 +19,10 @@ public class StringExample {
         String result1 = str1 + ", " + str2;
         System.out.println(result1);
 
+        int[] arrTem = {1,2,3,4};
+        System.out.println(arrTem[0]);
+        System.out.println(arrTem[1]);
+
         String subStr_0 = str1.substring(0);
         String result_0 = subStr_0 + "!";
         System.out.println(result_0);
