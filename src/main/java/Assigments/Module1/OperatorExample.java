@@ -9,6 +9,7 @@ package Assigments.Module1;
 public class OperatorExample {
 
     public static void main(String[] args) {
+
         System.out.println("===== 算术运算符 =====");
         testArithmeticOperators();
 
@@ -31,6 +32,7 @@ public class OperatorExample {
         testOperatorPrecedence();
     }
 
+    // 不需要创建类的实例就可以直接调用，不依赖对象状态
     // 测试算术运算符
     public static void testArithmeticOperators() {
         int a = 10, b = 3;
