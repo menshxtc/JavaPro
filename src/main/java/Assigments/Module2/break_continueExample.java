@@ -1,5 +1,7 @@
 package Assigments.Module2;
 
+import java.util.Scanner;
+
 /**
  * @Author mensh
  * @Date 2025/7/19 18:29
@@ -9,18 +11,18 @@ package Assigments.Module2;
 public class break_continueExample {
     public static void main(String[] args) {
 
-        testBreak();
+//        testBreak();
 
         testContinue();
 
     }
 
     private static void testContinue() {
-        for (int i = 1; i <= 5; i++) {
-            if (i == 3) {
-                continue; // 当i等于3时，跳过后续打印，直接进入下一次循环
+        for (int i = 1; i <= 10; i++) {
+            if (i == 5) {
+                continue; // 当i等于5时，跳过后续打印，直接进入下一次循环
             }
-            System.out.println(i); // 打印1、2、4、5
+            System.out.println(i); // 打印1-4、6-10
         }
     }
 

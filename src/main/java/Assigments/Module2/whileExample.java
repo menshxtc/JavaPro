@@ -11,23 +11,23 @@ import java.util.Scanner;
 public class whileExample {
     public static void main(String[] args) {
 
-        int count = 0;
-        while (count<=10) {
-            System.out.print(count + " ");
-            count += 2;
-        }
+//        int count = 0;
+//        while (count<=10) {
+//            System.out.print(count + " ");
+//            count += 2;
+//        }
 
         // 重复执行直到满足某个条件
         testConditionLoop();
 
         // 已知终止条件但次数不固定
-        testCountLoop();
+//        testCountLoop();
 
         // 重复执行直到外部状态变化
-        testControlLoop();
+//        testControlLoop();
 
         // 测试 do-while 循环
-        testDoWhile();
+//        testDoWhile();
 
     }
 
@@ -37,10 +37,12 @@ public class whileExample {
         while (a < 3) {
             System.out.println("while 执行"); // 不执行
         }
+
         // do-while 循环：先执行再判断
         int b = 5;
         do {
-            System.out.println("do-while 执行"); // 执行一次
+            System.out.println("do-while 执行, b = "+ b); // 执行一次
+            b++;
         } while (b < 3);
     }
 

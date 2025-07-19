@@ -9,9 +9,9 @@ package Assigments.Module2;
 public class forExample {
     public static void main(String[] args) {
 
-        testForLoop();
+//        testForLoop();
 
-        testForEach();
+//        testForEach();
 
         testIndexOutOfBoundsException();
 
@@ -32,9 +32,9 @@ public class forExample {
     }
 
     private static void testForEach() {
-        int[] numbers = {1, 3, 5, 7, 9};
+        double[] numbers = {1, 3, 5, 7, 9};
         // 语法：for (元素类型 变量名 : 数组/集合)
-        for (int num : numbers) {
+        for (double num : numbers) {
             System.out.println(num); // 直接获取元素值，无需通过索引
         }
     }
@@ -44,9 +44,11 @@ public class forExample {
         for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
+
         //遍历数组
         int[] numbers = {1, 3, 5, 7, 9};
         int sum = 0;
+        System.out.println(numbers.length);
         // 遍历数组，i为数组索引
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];

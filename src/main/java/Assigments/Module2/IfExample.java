@@ -8,11 +8,12 @@ package Assigments.Module2;
 
 public class IfExample {
     public static void main(String[] args) {
+
         testLine();
 
-        testIfElse(80);
+        testIfElse();
 
-        testIfNested(74);
+        testIfNested();
 
         testDangling(1,2);
 
@@ -40,8 +41,8 @@ public class IfExample {
         if (a > 0)
             if (b > 0)
                 System.out.println("a和b都大于0");
-            else
-                System.out.println("else执行了");
+        else
+            System.out.println("else执行了");
         // 实际执行
         if (a > 0) {
             if (b > 0) {
@@ -55,12 +56,15 @@ public class IfExample {
             if (b > 0) { // 内层 if 用花括号
                 System.out.println("a和b都大于0");
             }
-        } else { // 外层 else，明确与外层 if 绑定
+        }
+        else { // 外层 else，明确与外层 if 绑定
             System.out.println("a≤0时执行");
         }
     }
 
-    private static void testIfNested(int grade) {
+    private static void testIfNested() {
+        int grade = 90;
+
         if (grade >= 60) {
             if (grade >= 90){
                 System.out.println("优秀");
@@ -74,16 +78,18 @@ public class IfExample {
         }
         else {
             System.out.println("不及格");
-            }
+        }
     }
 
 
-    private static void testIfElse(int grade) {
+    private static void testIfElse() {
+        int grade = 22;
+
         if (grade >= 90) {
             System.out.println("优秀");
-        } else if (grade >= 75) {
+        } else if (grade >= 75) { // [75,90)
             System.out.println("良好");
-        } else if (grade >= 60) {
+        } else if (grade >= 60) { // [60,75)
             System.out.println("及格");
         }
         else {
@@ -93,16 +99,21 @@ public class IfExample {
 
     private static void testLine() {
         int i = 10;
-        if(i++ <= 12)
-            System.out.println("无{ }单行if语句执行");
+        if(i <= 9) System.out.println("无{ }单行if语句执行");
 
-        if(i++ <= 12){
+        if(i <= 12){
             System.out.println("有{ }单行if语句执行");
         }
 
-        if(i++ <= 12){
+        if(i <= 12){
             i++;
             System.out.println("有{ }多行if语句执行");
+        }
+
+        if (i < 8){
+            System.out.println(1);
+        } else {
+            System.out.println(2);
         }
     }
 }

@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class GradeCalculator {
     public static void main(String[] args) {
+
         // 创建Scanner对象用于获取用户输入
         Scanner in = new Scanner(System.in);
 
