@@ -11,7 +11,7 @@ package Assigments.Module1;
 class Boy{
     private int height = 190;
     double weight = 170;
-    public void setHeight(int height) {
+    public void setHeight(int height){
         this.height = height;
     }
     public int getHeight(){
