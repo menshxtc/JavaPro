@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class break_continueExample {
     public static void main(String[] args) {
 
-//        testBreak();
+        testBreak();
 
         testContinue();
 
