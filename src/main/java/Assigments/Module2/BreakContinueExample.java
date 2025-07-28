@@ -1,14 +1,12 @@
 package Assigments.Module2;
 
-import java.util.Scanner;
-
 /**
  * @Author mensh
  * @Date 2025/7/19 18:29
  * @Abstract
  */
 
-public class break_continueExample {
+public class BreakContinueExample {
     public static void main(String[] args) {
 
         testBreak();

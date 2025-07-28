@@ -6,7 +6,7 @@ package Assigments.Module2;
  * @Abstract
  */
 
-public class forExample {
+public class ForExample {
     public static void main(String[] args) {
 
 //        testForLoop();

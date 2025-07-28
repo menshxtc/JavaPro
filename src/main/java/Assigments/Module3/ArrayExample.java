@@ -17,7 +17,7 @@ public class ArrayExample {
         // 声明并分配内存
         int[] grades = new int[5];
         // 声明时直接初始化，长度自动分配
-        int[ ] highScores = {99,98,98,88,68};
+        int[] highScores = {99,98,98,88,68};
         String[] names = {"Alice", "Bob", "Charlie"};
 
         // 数组的使用

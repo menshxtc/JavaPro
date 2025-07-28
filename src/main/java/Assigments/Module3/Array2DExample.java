@@ -15,6 +15,7 @@ public class Array2DExample {
                 {7, 8, 9},
                 {10,11,12}
         };
+        int[] array = {1,2,3 };
 
         // 声明了一个 int 类型的二维数组变量，但未创建数组对象
         int[][] my2DArray;

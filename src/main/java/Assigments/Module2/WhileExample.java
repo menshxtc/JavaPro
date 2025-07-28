@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @Abstract
  */
 
-public class whileExample {
+public class WhileExample {
     public static void main(String[] args) {
 
 //        int count = 0;

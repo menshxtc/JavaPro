@@ -5,8 +5,10 @@ public class Main {
         int b=0;
         // Code block
         System.out.println("Hello world!");
-        int a= 0;
+        int a = 0;
         boolean tu = true;
+
+        System.out.println(a);
 
     }
 }

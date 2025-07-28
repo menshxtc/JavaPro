@@ -1,4 +1,4 @@
-package Assigments.Module2;
+package Assigments.Module1;
 
 import java.util.Scanner;
 
@@ -10,6 +10,7 @@ import java.util.Scanner;
 
 public class TextAnalyzer {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         StringBuilder textBuilder = new StringBuilder(); // 累积输入文本
         int lineCount = 0; // 统计行数
