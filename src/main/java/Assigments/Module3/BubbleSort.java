@@ -32,36 +32,30 @@ public class BubbleSort {
         System.out.println();
 
         // 实现冒泡排序算法并展示过程
-        for (int i = 0; i < size - 1; i++) {
+        for (int i = 0; i < size-1; i++) {
             System.out.println("\n--- 轮次 " + (i + 1) + " ---");
-
-            for (int j = 0; j < size - i - 1; j++) {
+            for (int j = 0; j < size-i-1; j++) {
                 // 打印当前比较的元素
                 System.out.print("比较 [" + array[j] + "] 和 [" + array[j + 1] + "]: ");
-
                 if (array[j] > array[j + 1]) {
-                    // 交换元素
+                    // 交换元素：如果左边的比右边的大，说明顺序不对，交换它们。
                     int temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
-
                     System.out.print("发生交换 -> ");
                 } else {
+                    // 不交换元素：如果左边的比右边的小或等于，说明顺序正确，不交换。
                     System.out.print("无交换 -> ");
                 }
-
                 // 打印当前数组状态
                 printArray(array);
                 System.out.println();
-
             }
-
             // 显示本轮结束后的数组状态
             System.out.print("\n轮次结束后后 " + (i + 1) + ": ");
             printArray(array);
-
             // 显示已排序的元素
-            System.out.println(" (元素 " + (size - i - 1) + " 已经被正确排序)");
+            System.out.println(" (元素 " + (size-i-1) + " 已经被正确排序)");
         }
 
         // 打印最终排序结果
